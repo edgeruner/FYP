@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Register">
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="96dp"-->
+<!--        android:fontFamily="monospace"-->
+<!--        android:text="Create New Account"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textColor="#F39A0F"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold"-->
+<!--       />-->
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_marginTop="200dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:ems="10"
+
+        android:hint="Full name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+
+
+        android:textSize="20sp"
+       />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_marginTop="30dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+
+        android:ems="10"
+
+        android:padding="10dp"
+
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_gravity="center"
+
+        android:padding="10dp"
+
+        android:textSize="20sp"
+         />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="380dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPhonetic"
+        android:hint="Phone"
+
+        android:padding="10dp"
+
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+
+        android:onClick="onClickRegister"
+        android:text="Register"
+
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/createText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:onClick="onClickLoginFromRegister"
+        android:text="Already registered? Login here"
+        android:layout_gravity="center"
+
+        android:textStyle="bold"
+         />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>
